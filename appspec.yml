@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: /chatApp
+  - source: /
     destination: /home/ubuntu/cds-demo/
 permissions:
   - object: /home/ubuntu/cds-demo
