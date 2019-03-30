@@ -20,7 +20,7 @@ hooks:
     - location: scripts/gunicorn.sh
       timeout: 6000
       runas: ubuntu
-    - location: /required_files
+    - location: /required-files
       timeout: 6000
       runas: ubuntu
   ApplicationStart:
