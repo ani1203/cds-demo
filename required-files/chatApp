@@ -1,12 +1,12 @@
 server {
   listen 80;
-  server_name 13.232.123.221;
+  server_name _;
   location = /favicon.ico { access_log off; log_not_found off; }
   location /static/ {
       root /home/ubuntu/cd-demo/fundoo;
   }
   location / {
       include proxy_params;
-      proxy_pass http://unix:/home/ubuntu/cd-demo/fundoo/fundoo.sock;
+      proxy_pass http://unix:/home/ubuntu/cd-demo/chatApp/chatApp.sock;
   }
 }
