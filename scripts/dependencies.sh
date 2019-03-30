@@ -1,7 +1,6 @@
 #!/bin/bash
-apt-get install python3-pip python3-dev nginx git -y
-apt-get install python3-pip
-pip3 install virtualenv -y
+sudo apt-get install python3-pip python3-dev nginx git -y
+sudo pip3 install virtualenv -y
 virtualenv /home/ubuntu/venv
 chown ubuntu:ubuntu cds-demo
 source /home/ubuntu/venv/bin/activate
