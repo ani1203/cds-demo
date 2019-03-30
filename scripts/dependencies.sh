@@ -3,7 +3,6 @@ sudo apt-get install python3-pip python3-dev nginx git -y
 pip3 install virtualenv -y
 virtualenv /home/ubuntu/venv
 chown ubuntu:ubuntu cds-demo
-chown ubuntu:ubuntu venv
 source /home/ubuntu/venv/bin/activate
 pip3 install -r /home/ubuntu/cds-demo/requirements/base.txt
 pip3 install django bcrypt django-extensions
