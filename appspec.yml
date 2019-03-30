@@ -6,8 +6,8 @@ files:
 permissions:
   - object: /home/ubuntu/cds-demo
     pattern: "**"
-    owner: root
-    group: root
+    owner: ubuntu
+    group: ubuntu
 hooks:
   BeforeInstall:
     - location: scripts/1.sh
