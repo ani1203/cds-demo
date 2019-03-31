@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'learnDjango.urls'
+ROOT_URLCONF = 'chatApp.urls'
 
 TEMPLATES = [
     {
@@ -71,8 +71,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'learnDjango.wsgi.application'
-ASGI_APPLICATION = "learnDjango.routing.application"
+WSGI_APPLICATION = 'chatApp.wsgi.application'
+ASGI_APPLICATION = "chatApp.routing.application"
 
 
 # Database
@@ -126,7 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/' 
 LOGIN_REDIRECT_URL = '/chat'
 
 CHANNEL_LAYERS = {
