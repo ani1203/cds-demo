@@ -7,7 +7,7 @@ source /home/ubuntu/venv/bin/activate
 pip3 install -r /home/ubuntu/cds-demo/requirements/base.txt
 pip3 install django bcrypt django-extensions
 pip3 install gunicorn 
-sudo cp /home/ubuntu/cds-demo/required-files  /etc/systemd/system
+sudo cp -r  /home/ubuntu/cds-demo/required-files  /etc/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl start gunicorn
 sudo systemctl enable gunicorn
